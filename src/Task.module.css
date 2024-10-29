@@ -1,0 +1,67 @@
+.task {
+    padding: 1rem;
+    height: 72px;
+    
+    background: var(--gray-500);
+    border: 1px solid var(--gray-400);
+    border-radius: 8px;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+.task input[type="checkbox"]{
+    display: none;
+}
+.task input[type="checkbox"] + label::before {    
+    content: "";
+    width: 12px;    
+    height: 12px;
+    border: 3px solid var(--blue-light);
+    border-radius: 999px;
+    display: inline-block;
+    cursor: pointer;
+}
+.task input[type="checkbox"] + label:hover::before {    
+    border: 3px solid var(--blue-dark);
+    background: rgba(30, 111, 159, 0.2);    
+}
+.task input[type="checkbox"]:checked + label::before {
+    content: '\2713';
+    text-align: center;
+    font-size: 0.875rem;
+    background: var(--purple-dark);
+    width: 17px;    
+    height: 17px;
+    border: transparent;
+}
+.task input[type="checkbox"]:checked + label:hover::before {    
+    background: var(--purple-light);    
+}
+
+.normalText{
+    flex: 1;
+    white-space: inherit;
+}
+.lineThroughText{
+    flex: 1;
+    white-space: inherit;
+    color: var(--gray-300);
+    text-decoration: line-through;
+}
+
+.deleteButton {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    line-height: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    color: var(--gray-300);
+    transition: 0.2s;
+}
+.deleteButton:hover {
+    background: var(--gray-400);
+    color: var(--red-danger);
+}

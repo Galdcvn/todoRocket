@@ -1,0 +1,146 @@
+.header {
+    height: 200px;
+    width: 100%;
+    background: var(--gray-700);
+    filter: drop-shadow(0 4px 4px rgba(0,0,0,0.25));
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header img {
+    width: 126px;
+    height: 48;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputAndButton {
+    width: 736px;
+    height: 54px;
+
+    margin-top: -27px;
+    z-index: 1;
+    gap: 8px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.input {
+    padding: 1rem;
+    width: 86.68%;
+    border: solid 1px var(--gray-700);
+    border-radius: 8px;
+
+    background: var(--gray-500);
+    color: var(--gray-300);
+}
+.input:focus {
+    color: var(--gray-100);    
+}
+
+.createButton {
+    padding: 1rem;
+    flex: 1;
+    border: none;
+    border-radius: 8px;
+
+    background: var(--blue-dark);
+    color: var(--gray-100);
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    transition: 0.2s;
+}
+.createButton:hover {
+    background: var(--blue-light);
+}
+.createButton:focus {
+    box-shadow: 0 0 0 2px var(--blue-light);
+}
+
+.listSection {
+    width: 736px;
+    margin-top: 64px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 24px;
+}
+
+.sectionHeader {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.createdTasks {
+    display: flex;
+    gap: 8px;
+}
+.createdTasks b {
+    color: var(--blue-light);
+}
+.createdTasks div {
+    padding: 0.125rem 0.5rem;
+    background: var(--gray-400);
+    color: var(--gray-200);
+    border-radius: 999px;
+}
+
+.completedTasks {
+    display: flex;
+    gap: 8px;
+}
+.completedTasks b {
+    color: var(--purple-light);
+}
+.completedTasks div {
+    padding: 0.125rem 0.5rem;
+    background: var(--gray-400);
+    color: var(--gray-200);
+    border-radius: 999px;
+}
+
+.noTasksDiv {
+    padding: 64px 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    color: var(--gray-300);
+    border-top: 1px solid var(--gray-400);
+    border-radius: 8px;
+}
+.noTasksDiv div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+.boldText {
+    font-weight: bold;
+}
+
+.taskList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
